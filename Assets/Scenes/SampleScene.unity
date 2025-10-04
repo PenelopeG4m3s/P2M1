@@ -395,6 +395,7 @@ GameObject:
   - component: {fileID: 1532706043}
   - component: {fileID: 1532706042}
   - component: {fileID: 1532706041}
+  - component: {fileID: 1532706045}
   m_Layer: 0
   m_Name: Spaceship2
   m_TagString: Untagged
@@ -426,9 +427,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43ab8b574c7647e4fb704796f8db1d3f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  keyToUse: 0
-  spriteRenderer: {fileID: 0}
-  randomPosition: {fileID: 0}
+  keyToUsePosition: 0
+  randomXPositionMin: 0
+  randomXPositionMax: 0
+  randomYPositionMin: 0
+  randomYPositionMax: 0
 --- !u!212 &1532706043
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -502,6 +505,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1532706045
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1532706040}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a533547c2bff8443a85466daf82e66c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ColorChanger
+  keyToUseColor: 273
+  spriteRenderer: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
